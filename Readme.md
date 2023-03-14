@@ -6,16 +6,50 @@
 
 <code>Joblist.py</code> is a simple Python interface to scrape accounting job posts from the website and prepare them in a Pandas dataframe for analysis.
 
-## How to run the code
+## Project Title
+Web Scraper
 
-1. cd to the directory where requirements.txt is located.
-2. activate your virtualenv.
-3. run: pip install -r requirements.txt in your shell or command prompt
-4. after successfully installing the requirements
-5. input:  python Joblist.py
-6. Enter the number of pages you would want to scrape:
-7. Enter the name you want to save your file with:
-8. The extracted Excel file is in the same directory as the script
-9. Kudos!!! Done.
+### Table of contents
+General info
+Technologies
+Setup
+Usage
+General info
+This project is a Python-based web scraper that can extract job information from a job listing website.
 
+### Technologies
+This project is created with:
+
+Python 3.7
+requests 2.25.1
+BeautifulSoup 4.9.3
+pandas 1.2.4
+
+### To run this project, install it locally using pip:
+
+$ pip install requests
+$ pip install beautifulsoup4
+$ pip install pandas
+
+### Usage
+To run this project, follow these steps:
+
+### Import the necessary libraries:
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+### Load the web_scraper function:
+
+def web_scraper(url):
+    ...
+    return data
+    
+### Call the function by passing the URL of the job listing website:
+
+url = 'https://example.com'
+data = web_scraper(url)
+
+The function will extract job information from the website and return a pandas dataframe with the following columns: Title, Link, Location, Year, Content, and Job Information.
 
